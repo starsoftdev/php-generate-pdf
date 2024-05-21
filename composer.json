@@ -1,0 +1,15 @@
+{
+    "autoload": {
+        "psr-0": {
+            "PdfGen": "src/"
+        }
+    },
+    "require": {
+        "spiritix/php-chrome-html2pdf": "^1.7"
+    },
+    "config": {
+        "allow-plugins": {
+            "oat-sa/composer-npm-bridge": true
+        }
+    }
+}

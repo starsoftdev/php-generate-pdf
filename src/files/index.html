@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar PDF</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: auto;
+        }
+        label, input {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        input[type="text"], input[type="date"] {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+        }
+        button {
+            padding: 10px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form action="/generate-pdf" method="post">
+        <label for="universidade">Universidade:</label>
+        <input type="text" id="universidade" name="universidade" value="UNIVERSIDADE ESTÁCIO DE SÁ" required>
+        
+        <label for="curso">Curso:</label>
+        <input type="text" id="curso" name="curso" value="CURSO SUPERIOR DE TECNOLOGIA EM ESTÉTICA E COSMÉTICA" required>
+        
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" name="titulo" value="TECNÓLOGO(A)" required>
+        
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" value="ADRIANA MÁRCIA MOREIRA RODRIGUES" required>
+        
+        <label for="naturalidade">Naturalidade:</label>
+        <input type="text" id="naturalidade" name="naturalidade" value="MINAS GERAIS" required>
+        
+        <label for="data_nascimento">Data de Nascimento:</label>
+        <input type="date" id="data_nascimento" name="data_nascimento" value="1969-04-19" required>
+        
+        <label for="identidade">Identidade:</label>
+        <input type="text" id="identidade" name="identidade" value="780.669-ES" required>
+        
+        <label for="nacionalidade">Nacionalidade:</label>
+        <input type="text" id="nacionalidade" name="nacionalidade" value="BRASILEIRO(A)" required>
+        
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
