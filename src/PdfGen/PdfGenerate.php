@@ -30,12 +30,10 @@ class PdfGenerate {
         }
         
         $doc->getElementById("naturalidade")->nodeValue = $formData['naturalidade'];
-
+        // $doc->getElementById("nacionalidade")->nodeValue = $formData['nacionalidade'];
         
         $doc->getElementById("data_nascimento")->nodeValue = date("d/m/Y", strtotime($formData['data_nascimento']));
         $doc->getElementById("identidade")->nodeValue = $formData['identidade'];
-        $doc->getElementById("nacionalidade")->nodeValue = $formData['nacionalidade'];
-
 
         $outputHtml = $doc->saveHTML();
 
