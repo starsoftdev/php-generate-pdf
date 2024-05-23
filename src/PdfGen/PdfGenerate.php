@@ -68,7 +68,7 @@ class PdfGenerate {
 
         $output = $converter->convert();
         
-        $output->download('google.pdf');
+        $output->download('deploma_001.pdf');
 
         
         echo "Hello World";
