@@ -78,18 +78,18 @@ class PdfGenerate {
         }
 
 
-        if(!file_exists($filePath)){ // file does not exist
-            die('file not found');
-        } else {
-            header("Cache-Control: public");
-            header("Content-Description: File Transfer");
-            header("Content-Disposition: attachment; filename=deploma_001.pdf");
-            header("Content-Type: application/zip");
-            header("Content-Transfer-Encoding: binary");
+        // if(!file_exists($filePath)){ // file does not exist
+        //     die('file not found');
+        // } else {
+        //     header("Cache-Control: public");
+        //     header("Content-Description: File Transfer");
+        //     header("Content-Disposition: attachment; filename=deploma_001.pdf");
+        //     header("Content-Type: application/zip");
+        //     header("Content-Transfer-Encoding: binary");
 
-            // read the file from disk
-            readfile($filePath);
-        }
+        //     // read the file from disk
+        //     readfile($filePath);
+        // }
 
         // $converter1 = new Converter($input, new FileOutput());
         
